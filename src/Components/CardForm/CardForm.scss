@@ -1,0 +1,42 @@
+.card-form{
+    width:450px;
+    padding: 50px  ;
+    border:2px solid blue; 
+    align-items:center;
+    text-align: center;
+    color:white;
+    margin: 20px auto;
+  background:rgba(0, 0, 0, 0.472);
+}
+.card-form-title{
+    font-size: 27px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:white;
+    line-height: 50px;
+}
+.card-form-text{
+    font-size: 18px;
+    font-family: sans-serif;
+    width: 95%;
+    text-align: center;
+    color:white;
+    line-height: 30px;
+    margin: 20px 0;
+}
+.card-form-input{
+    width: 100%;
+    // height: 40px;
+    border: none;
+    border-radius: 50px;    
+    margin-top: 15px ;
+    padding: 15px 30px;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    background:rgba(65, 63, 63, 0.604);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}

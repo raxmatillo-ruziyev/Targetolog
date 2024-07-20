@@ -1,0 +1,27 @@
+.header{
+    background-image: url(/src/assets/header.jpeg);
+    background-size: cover;
+    padding-bottom:30px ;
+    padding-top: 5px;
+}
+.header-content{
+    display: flex;
+    align-items:center;
+}
+.header-title{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    font-family: sans-serif ;
+    line-height: 70px;
+}
+.header-text{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: sans-serif ;
+    line-height: 30px;
+    width: 79.9%;
+    margin-top: 20px;
+
+}
