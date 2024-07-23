@@ -1,8 +1,8 @@
 import './App.scss'
-import CardForm from './Components/CardForm/CardForm'
+import Contact from './Components/Contact/Contact'
 import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero'
-import Navbar from './Components/Navbar/Navbar'
+
 
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
     <>
    <Header/>
    <Hero/>
+   <Contact/>
     </>
   )
 }
