@@ -6,18 +6,18 @@ const Card2 = ({cardTitle,cardText,price,cardSubtext,cardBtn,price2,price3,cardS
         <div className="card2">
             <div className="card2-box">
                 <h1 className="card2-title">{cardTitle}</h1> <br />
-                <p className="card2-text">{cardText}</p>
+                <p className="card2-text">{cardText}</p> 
                 <ul className="card2-list">
                     <li className="card2-item">
-                        <span>{price}</span>
+                        <p className='span2'>{price}</p>
                         <p className="card2-subtext">{cardSubtext}</p>
                     </li>
                     <li className="card2-item">
-                        <span>{price2}</span>
+                        <p className='span2'>{price2}</p>
                         <p className="card2-subtext">{cardSubtext2}</p>
                     </li>
                     <li className="card2-item">
-                        <span>{price3}</span>
+                        <p className='span2'>{price3}</p>
                         <p className="card2-subtext">{cardSubtext3}</p>
                     </li>
                 </ul>

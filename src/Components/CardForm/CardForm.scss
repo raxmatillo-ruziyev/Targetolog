@@ -1,42 +1,160 @@
-.card-form{
-    width:450px;
-    padding: 50px  ;
-    border:2px solid blue; 
-    align-items:center;
+.card-form {
+    width: 450px;
+    padding: 50px;
+    border: 2px solid blue;
+    align-items: center;
     text-align: center;
-    color:white;
+    color: white;
     margin: 20px auto;
-  background:rgba(0, 0, 0, 0.472);
+    background: rgba(0, 0, 0, 0.472);
 }
-.card-form-title{
+
+.card-form-title {
     font-size: 27px;
     font-family: sans-serif;
     font-weight: bold;
-    color:white;
+    color: white;
     line-height: 50px;
 }
-.card-form-text{
+
+.card-form-text {
     font-size: 18px;
     font-family: sans-serif;
     width: 95%;
     text-align: center;
-    color:white;
+    color: white;
     line-height: 30px;
     margin: 20px 0;
 }
-.card-form-input{
+
+.card-form-input {
     width: 100%;
     // height: 40px;
     border: none;
-    border-radius: 50px;    
-    margin-top: 15px ;
+    border-radius: 50px;
+    margin-top: 15px;
     padding: 15px 30px;
     outline: none;
     font-family: sans-serif;
     font-size: 20px;
-    background:rgba(65, 63, 63, 0.604);
+    background: rgba(65, 63, 63, 0.604);
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+}
+
+@media (max-width: 1220px) {
+    .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1120px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 920px) {
+    .container {
+        max-width: 800px;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .card-form {
+        width: 400px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .card-form {
+        width: 300px;
+    }
+
+    .card-form-text {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .card-form-title {
+        font-size: 21px;
+
+
+    }
+
+    .card-form-input {
+        width: 100%;
+        padding: 5px auto;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 200px;
+    }
+
+    .card-form {
+        width: 200px;
+    }
+
+    .card-form-text {
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+        margin: 5px 0;
+    }
+
+    .card-form-title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .card-form-input {
+        width: 100%;
+        padding:7px 5px;
+        font-size: 13px;
+    }
+
+
 }

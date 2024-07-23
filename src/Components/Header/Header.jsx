@@ -10,8 +10,8 @@ const Header = () => {
             <div className="header-content">
                <div>
                <h1 className="header-title">Таргетолог</h1>
-               <hr style={{
-                width: 320,
+               <hr className='header-hr' style={{
+                width: "43%",
                 marginLeft:5,
                 marginTop: 10,
                 marginBottom: 10,

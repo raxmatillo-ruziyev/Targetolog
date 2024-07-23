@@ -27,6 +27,41 @@
     justify-content: space-between;
     
 }
+.navbar-link3{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 19px;
+    color:black;
+    padding: 5px 19px;
+    line-height: 40px;
+
+
+  
+}
+#btnjon{
+    color:black;
+    margin: 10px 0;
+
+
+}
+.modalBtn{
+    background: transparent;
+    border:none;
+    padding-top: 7px;
+    padding-right: 5px;
+    font-size: 30px;
+    color:white;
+    
+    
+}
+.modal-item{
+    display:none;
+
+}
+.navbar-drawer{
+    text-align: center;
+
+}
 .navbar-link{
     text-decoration: none;
     font-family: sans-serif;
@@ -69,3 +104,90 @@
   }
   
   
+  @media (max-width: 1220px) {
+    .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 ;
+    }
+}
+
+@media (max-width: 1120px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 920px) {
+    .container {
+        max-width: 800px;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .container {
+        max-width: 700px;
+    }
+    .navbar-item,.navbar-item2{
+        display: none;
+    }
+    .modal-item{
+        display:block;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        max-width: 400px;
+    }
+    .logojon{
+        width: 70px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        max-width: 300px;
+    }
+    .logojon{
+        width: 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 200px;
+    }
+    .logojon{
+        width: 50px;
+    }
+    .modalBtn{
+        font-size: 25px;
+    }
+
+  
+}
+
+
+
