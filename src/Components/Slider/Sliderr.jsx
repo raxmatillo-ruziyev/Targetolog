@@ -13,57 +13,71 @@ import s46 from '../../assets/46.jpg';
 
 const Sliderr = () => {
   const settings = {
+    className: "center",
+    centerMode: true,
+    centerPadding: "10px",
+    speed: 500,
     dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
     autoplaySpeed: 6000,
     cssEase: "linear",
     responsive: [
+      {
+        breakpoint: 1220,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: true
+        }
+      },
       {
         breakpoint: 1120,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 920,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
           dots: true
         }
       },
       {
         breakpoint: 820,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
           dots: true
         }
       },
       {
         breakpoint: 720,
         settings: {
-          slidesToShow: 2 ,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
           dots: true
         }
       },
       {
         breakpoint: 620,
         settings: {
-          slidesToShow: 1.7,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
           dots: true
         }
       },
       {
         breakpoint: 520,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
           dots: true
         }
       },
@@ -72,69 +86,42 @@ const Sliderr = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
           dots: true
         }
       }
     ]
   };
+  
 
   return (
     <div className="slider">
       <div className="container">
         <h1 className="slider-title">Отзывы от клиентов</h1>
         <div className="slider-container">
+    
           <Slider {...settings}>
-            <div style={{
-              textAlign:"center",
-              margin:"0 auto",
-              width:"100%"
-            }}>
-              <img src={s40} alt="" width={250} height={400} />
+          <div className="slider-box" >
+              <img src={s40} alt="" className="slider-image"/>
             </div>
-            <div style={{
-              textAlign:"center",
-              margin:"0 auto",
-              width:"100%"
-            }}>
-              <img src={s41} alt="" width={250} height={400} />
+            <div className="slider-box">
+              <img src={s41} alt="" className="slider-image"/>
             </div>
-            <div style={{
-              textAlign:"center",
-              margin:"0 auto",
-              width:"100%"
-            }}>
-              <img src={s42} alt="" width={250} height={400} />
+            <div className="slider-box" >
+              <img src={s42} alt="" className="slider-image"/>
             </div>
-            <div style={{
-              textAlign:"center",
-              margin:"0 auto",
-              width:"100%"
-            }}>
-              <img src={s43} alt="" width={250} height={400} />
+            <div className="slider-box" >
+              <img src={s43} alt="" className="slider-image"/>
             </div>
-            <div style={{
-              textAlign:"center",
-              margin:"0 auto",
-              width:"100%"
-            }}>
-              <img src={s44} alt="" width={250} height={400} />
+            <div className="slider-box" >
+              <img src={s44} alt="" className="slider-image"/>
             </div>
-            <div style={{
-              textAlign:"center",
-              margin:"0 auto",
-              width:"100%"
-            }}>
-              <img src={s45} alt="" width={250} height={400} />
+            <div className="slider-box" >
+              <img src={s45} alt="" className="slider-image"/>
             </div>
-            <div style={{
-              textAlign:"center",
-              margin:"0 auto",
-              width:"100%"
-            }}>
-              <img src={s46} alt="" width={250} height={400} />
+            <div className="slider-box" >
+              <img src={s46} alt="" className="slider-image"/>
             </div>
-          </Slider>
+      </Slider>
         </div>
       </div>
     </div>
