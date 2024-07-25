@@ -109,10 +109,6 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="footer-box">
-          <a className='footer-link' href="#">UA</a>
-          <a className='footer-link' href="#">RU</a>
-        </div>
         <a className='footer-link' href="#">@ 2015-2022. Все права защищены Политика Конфиденциальности</a>
       </div>
       <ToastContainer />
