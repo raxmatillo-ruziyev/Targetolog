@@ -21,7 +21,7 @@ const Card2 = ({cardTitle,cardText,price,cardSubtext,cardBtn,price2,price3,cardS
                         <p className="card2-subtext">{cardSubtext3}</p>
                     </li>
                 </ul>
-                <button className="card2-btn">{cardBtn}</button>
+               <a href="#service"> <button className="card2-btn">{cardBtn}</button></a>
             </div>
         </div>
       

@@ -26,7 +26,7 @@ const Section = () => {
             <SCard/>
             <p className='section-text2'>{t("36")}</p>
          
-          <Button name={t("37")}/>
+        <a href="#service">  <Button name={t("37")}/></a>
 
          </div>
             </div>
