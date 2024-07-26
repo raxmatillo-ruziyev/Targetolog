@@ -94,7 +94,7 @@ const Sliderr = () => {
   
 
   return (
-    <div className="slider">
+    <div id="slider" className="slider">
       <div className="container">
         <h1 className="slider-title">Отзывы от клиентов</h1>
         <div className="slider-container">

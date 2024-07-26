@@ -9,6 +9,12 @@
     outline: none;
     font-family: sans-serif;
     font-size: 17px;
+    cursor: pointer;
+    transition:  0.3s ;
+    &:hover
+{
+        background: rgba(72, 70, 70, 0.796);
+    }
 }
 
 @media (max-width:420px) {

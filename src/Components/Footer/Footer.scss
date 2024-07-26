@@ -23,16 +23,25 @@
     }
 
     &-btn {
+        color:white;
         background: rgba(38, 133, 221, 0.948);
         width: 60%;
         border-radius: 50px;
-        border: none;
+        border: 1px solid rgba(38, 133, 221, 0.948);
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
         padding: 10px;
         cursor: pointer;
+        &:hover{
+            background:white;
+            border:1px solid white;
+            color:rgba(38, 133, 221, 0.948);
+            padding: 10px;
+            width: 60%;
+            border-radius: 50px;
+        }
     }
 
     &-textarea {

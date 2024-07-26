@@ -5,7 +5,7 @@ import Card2 from '../Card/Card2'
 const Hero = () => {
     return (
         <div>
-            <div className="hero">
+            <div id='hero' className="hero">
                 <div className="container">
                     <div className="hero-content">
                         <h1 className="hero-title">Результаты моих клиентов</h1>

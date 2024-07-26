@@ -4,7 +4,7 @@ import Navbar from '../Navbar/Navbar'
 import CardForm from '../CardForm/CardForm'
 const Header = () => {
   return (
-    <div className='header'>
+    <div className='header' id='header'>
         <div className="container">
             <Navbar/>
             <div className="header-content">

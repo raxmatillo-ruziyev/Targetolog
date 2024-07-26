@@ -4,7 +4,7 @@ import CardForm from '../CardForm/CardForm'
 const Service = () => {
   return (
     <>
-     <div className='service'>
+     <div id='service' className='service'>
         <div className="container">
             <div className="service-content">
                <div>
