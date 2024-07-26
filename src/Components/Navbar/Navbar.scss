@@ -2,6 +2,29 @@
     width: 100%;
     margin: 0 auto;
 }
+.language-button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    color:white;
+    margin: 0px;
+    cursor: pointer;
+    &:hover{
+        color:blue;
+    }
+  }
+  .language-button2 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    color:black;
+    margin: 0px;
+    cursor: pointer;
+    &:hover{
+        color:blue;
+    }
+  }
+  
 .navbar-list{
     display: flex;
     justify-content: space-between;

@@ -1,20 +1,23 @@
-import React, { useState } from 'react';
-import { Button, Drawer, Space } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Drawer } from 'antd';
 import { useTranslation } from 'react-i18next';
 import logo from '../../assets/logo.png';
 import './Navbar.scss';
+import i18n from '../../i18n';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [activeLanguage, setActiveLanguage] = useState(localStorage.getItem('i18nextLng') || 'RU'); // Default til
   const { t, i18n } = useTranslation();
 
-  const handleLanguageClick = (language) => {
-    setActiveLanguage(language);
-    const lang = language === 'UA' ? 'ua' : 'ru';
-    i18n.changeLanguage(lang); // Tilni o'zgartirish
-    localStorage.setItem('i18nextLng', language); // Tilni localStoragega saqlash
-    onClose(); // Til o'zgartirilganda drawer yopiladi
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('i18nextLng') || 'uz';
+    i18n.changeLanguage(savedLanguage);
+  }, []);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem('i18nextLng', lng);
+    onClose();
   };
 
   const showDrawer = () => {
@@ -26,7 +29,7 @@ const Navbar = () => {
   };
 
   const handleLinkClick = () => {
-    onClose(); // Link bosilganda drawer yopiladi
+    onClose();
   };
 
   return (
@@ -40,20 +43,20 @@ const Navbar = () => {
               </a>
             </li>
             <li className="navbar-item">
-              <a href="#hero" className="navbar-link">КЕЙСЫ</a>
-              <a href="#slider" className="navbar-link">ОТЗЫВЫ</a>
-              <a href="#service" className="navbar-link">КОНТАКТЫ</a>
+              <a href="#hero" className="navbar-link">{t("welcome")}</a>
+              <a href="#slider" className="navbar-link">{t("1")}</a>
+              <a href="#service" className="navbar-link">{t("2")}</a>
             </li>
             <li className="navbar-item2">
               <button 
-                className={`navbar-link2 ${activeLanguage === 'UA' ? 'active' : ''}`}
-                onClick={() => handleLanguageClick('UA')}
+                className="language-button"
+                onClick={() => changeLanguage('uz')}
               >
-                UA
+                UZ
               </button>
               <button 
-                className={`navbar-link2 ${activeLanguage === 'RU' ? 'active' : ''}`}
-                onClick={() => handleLanguageClick('RU')}
+                className="language-button"
+                onClick={() => changeLanguage('ru')}
               >
                 RU
               </button>
@@ -73,21 +76,18 @@ const Navbar = () => {
         onClose={onClose}
         open={open}
       >
-        <a href="#header" className="navbar-link3" onClick={handleLinkClick}>КЕЙСЫ</a> <br />
-        <a href="#hero" className="navbar-link3" onClick={handleLinkClick}>КЕЙСЫ</a> <br />
-        <a href="#slider" className="navbar-link3" onClick={handleLinkClick}>ОТЗЫВЫ</a> <br />
-        <a href="#service" className="navbar-link3" onClick={handleLinkClick}>КОНТАКТЫ</a> <br />
+        <a href="#hero" className="navbar-link3" onClick={handleLinkClick}>{t("welcome")}</a> <br />
+        <a href="#slider" className="navbar-link3" onClick={handleLinkClick}>{t("1")}</a> <br />
+        <a href="#service" className="navbar-link3" onClick={handleLinkClick}>{t("2")}</a> <br />
         <button
-          id="btnjon"
-          className={`navbar-link2 ${activeLanguage === 'UA' ? 'active' : ''}`}
-          onClick={() => handleLanguageClick('UA')}
+          className="language-button2"
+          onClick={() => changeLanguage('uz')}
         >
-          UA
+          UZ
         </button>
         <button
-          id="btnjon"
-          className={`navbar-link2 ${activeLanguage === 'RU' ? 'active' : ''}`}
-          onClick={() => handleLanguageClick('RU')}
+          className="language-button2"
+          onClick={() => changeLanguage('ru')}
         >
           RU
         </button>

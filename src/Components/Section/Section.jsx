@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Section.scss'
 import SCard from '../SectionCard/SCard'
 import Button from '../Button/Button'
+import { useTranslation } from 'react-i18next'
 const Section = () => {
+  const {t,i18n}= useTranslation();
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('i18nextLng') || 'uz';
+    i18n.changeLanguage(savedLanguage);
+  }, []);
   return (
     <>
     <div className="section">
         <div className="container">
             <div className="section-content">
          <div className="section-left">
-            <h1 className='section-title'>Меня рекомендуют</h1>
-            <p className='section-text'>Сейчас у меня находится более 10 проектов на постоянном обслуживании, которым я ежемесячно привлекаю максимальное количество целевых обращений</p>
+            <h1 className='section-title'>{t("29")}</h1>
+            <p className='section-text'>{t("30")}</p>
             <SCard/> <br />
             <SCard/>
         
@@ -18,9 +24,9 @@ const Section = () => {
          <div className="section-right">
             <SCard/> <br />
             <SCard/>
-            <p className='section-text2'>Хотите такой же результат?</p>
+            <p className='section-text2'>{t("36")}</p>
          
-          <Button name={"ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ"}/>
+          <Button name={t("37")}/>
 
          </div>
             </div>

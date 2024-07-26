@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import './Slider.scss';
 import "slick-carousel/slick/slick.css";
@@ -10,6 +10,7 @@ import s43 from '../../assets/43.jpg';
 import s44 from '../../assets/44.jpg';
 import s45 from '../../assets/45.jpg';
 import s46 from '../../assets/46.jpg';
+import { useTranslation } from "react-i18next";
 
 const Sliderr = () => {
   const settings = {
@@ -91,12 +92,17 @@ const Sliderr = () => {
       }
     ]
   };
+  const {t,i18n} =useTranslation();
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('i18nextLng') || 'uz';
+    i18n.changeLanguage(savedLanguage);
+  }, []);
   
 
   return (
     <div id="slider" className="slider">
       <div className="container">
-        <h1 className="slider-title">Отзывы от клиентов</h1>
+        <h1 className="slider-title">{t("38")}</h1>
         <div className="slider-container">
     
           <Slider {...settings}>
